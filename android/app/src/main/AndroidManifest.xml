@@ -1,0 +1,21 @@
+<!-- Dentro de <application> ... -->
+<activity
+    android:name=".MainActivity"
+    android:exported="true"
+    android:launchMode="singleTask"
+    android:theme="@style/LaunchTheme"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenDensity|uiMode"
+    android:hardwareAccelerated="true"
+    android:windowSoftInputMode="adjustResize">
+
+    <!-- Deep link do OAuth -->
+    <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data
+            android:scheme="smartbitrix24"
+            android:host="auth"
+            android:path="/callback" />
+    </intent-filter>
+</activity>
