@@ -40,6 +40,12 @@ flutter pub get
 flutter run
 ```
 
+5) Executar testes:
+```
+flutter test
+flutter test --coverage
+```
+
 ## Setup do Backend OAuth
 
 ```
@@ -48,6 +54,13 @@ cp .env.example .env
 # Edite CLIENT_ID e CLIENT_SECRET do App Bitrix24
 npm i
 npm run dev
+```
+
+### Executar testes backend
+```
+cd backend
+npm test
+npm run test:coverage
 ```
 
 ## Fluxo de Autenticação
@@ -75,6 +88,8 @@ npm run dev
 - [docs/SECURITY.md](docs/SECURITY.md)
 - [docs/COMPLIANCE.md](docs/COMPLIANCE.md)
 - [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md)
+- [docs/TESTING.md](docs/TESTING.md) - **NOVO**: Guia completo de testes
+- [docs/CICD.md](docs/CICD.md) - **NOVO**: Documentação CI/CD
 - [docs/LGPD/POLITICA_DE_PRIVACIDADE.md](docs/LGPD/POLITICA_DE_PRIVACIDADE.md)
 - [docs/LGPD/TERMO_DE_CONSENTIMENTO.md](docs/LGPD/TERMO_DE_CONSENTIMENTO.md)
 - [docs/LGPD/ACORDO_DPA.md](docs/LGPD/ACORDO_DPA.md)
