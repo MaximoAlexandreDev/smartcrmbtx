@@ -9,6 +9,6 @@ class AppConfig {
   static String portalDomain = ''; // ex: suaconta.bitrix24.com
 
   // Endereço do backend seguro (Node/Express) para troca de código OAuth e refresh.
-  static String backendBaseUrl = 'http://10.0.2.2:3000'; // Emulador Android
+  static String backendBaseUrl = 'https://im.ngrok-free.dev'; // Emulador Android
   // Em produção, usar HTTPS com certificado válido.
 }
